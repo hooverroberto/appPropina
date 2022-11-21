@@ -1,0 +1,163 @@
+    /* # Guía de estilos Front-end
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colores
+
+### Primarios
+
+- Cyan fuerte: hsl(172, 67%, 45%)
+
+### Neutrales
+
+- Cyan muy oscuro: hsl(183, 100%, 15%)
+- Cyan grisaseo oscuro: hsl(186, 14%, 43%)
+- Cyan grisaseo: hsl(184, 14%, 56%)
+- Cyan grisaseo claro: hsl(185, 41%, 84%)
+- Cyan grisaseo muy claro: hsl(189, 41%, 97%)
+- Blanco: hsl(0, 0%, 100%)
+
+## Tipografía
+
+### Cuerpo
+
+- Font size (form inputs): 24px
+
+### Fuente
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700 */
+    
+    body {
+        background: hsl(185, 41%, 84%);
+        font-family: 'Space Mono', monospace;
+    }
+    
+    .bi {
+        color: hsl(172, 67%, 45%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .container-row {
+        margin: 0 auto;
+        background: hsl(0, 0%, 100%);
+        /* border: 1px solid red; */
+    }
+    
+    .border-container {
+        border-radius: 20px;
+    }
+    
+    .bg-grisaceo {
+        background: hsl(183, 100%, 15%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+    }
+    
+    .alinear>.btn-grisaceo {
+        background: hsl(183, 100%, 15%);
+        border: none;
+    }
+    
+    button.btn-grisace {
+        background: hsl(172, 67%, 45%);
+        border: none;
+    }
+    
+    i.bi-currency-dollar,
+    i.bi-person-fill {
+        color: hsl(186, 14%, 43%);
+    }
+    
+    span.bg-color {
+        background: hsl(189, 41%, 97%);
+    }
+    
+    input.bg-color {
+        background: hsl(189, 41%, 97%);
+    }
+
+    .text-person{
+        color:hsl(186, 14%, 43%)
+    }
+
+    .personAmount,
+    .total{
+        color: hsl(172, 67%, 45%);    
+    }
+    
+    
+    .alinear {
+        /* border: 1px solid red; */
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .alinear>button.btns {
+        border: none;
+        flex-direction: row;
+        background: hsl(183, 100%, 15%);
+        color: hsl(0, 0%, 100%);
+        margin-right: 5px;
+        margin-bottom: 5px;
+        width: 30%;
+        height: 50px;
+    }
+
+    .alinear>button.btns:hover{
+        background: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+    }
+    
+    .alinear>input.i {
+        border: none;
+        width: 30%;
+        height: 50px;
+        background: hsl(189, 41%, 97%);
+        text-align: center;
+    }
+    
+    .alinear>button.m {
+        background: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+    }
+    
+    .alinear>.b {
+        background: hsl(0, 0%, 100%);
+        color: hsl(183, 100%, 15%);
+        width: 40%;
+        height: 50px;
+    }
+    
+    @media (max-width: 500px) {
+        .alinear {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .alinear>button.btns {
+            flex-direction: row;
+            width: 48%;
+        }
+        .alinear>button.m {
+            background: hsl(172, 67%, 45%);
+            color: hsl(183, 100%, 15%);
+        }
+        .alinear>input.i {
+            background: hsl(0, 0%, 100%);
+            color: hsl(183, 100%, 15%);
+            width: 48%;
+        }
+    }
